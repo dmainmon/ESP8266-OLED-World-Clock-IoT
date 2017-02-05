@@ -63,6 +63,7 @@ byte packetBuffer[ NTP_PACKET_SIZE]; //buffer to hold incoming and outgoing pack
 WiFiUDP udp;
 
 // Initialize the OLED display using Wire library
+// the I2C address "0x3c" was determined using I2C scanner sketch I2C_Scanner.ino
 SSD1306  display(0x3c, D3, D5);
 
 ESP8266WebServer server(80);
